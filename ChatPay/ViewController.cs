@@ -1,7 +1,7 @@
 ﻿using Foundation;
 using System;
 using UIKit;
-using Binding;
+//using Binding;
 
 namespace ChatPay
 {
@@ -21,10 +21,9 @@ namespace ChatPay
         {
             base.ViewDidAppear(animated);
 
-            var proxy = new SwiftFrameworkProxy();
+            //var proxy = new KeyboardProxy();
 
-            proxy.OnloginWithViewController(this);
-            
+            //proxy.OnloginWithViewController(this);
         }
 
         public override void DidReceiveMemoryWarning()

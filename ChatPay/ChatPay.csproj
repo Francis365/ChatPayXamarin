@@ -66,9 +66,6 @@
         <Reference Include="Xamarin.iOS" />
         <Reference Include="System.Numerics" />
         <Reference Include="System.Numerics.Vectors" />
-        <Reference Include="NativeLibrary">
-          <HintPath>..\..\CustomKeyboardLibrary\CustomKeyboardLibrary\bin\Debug\NativeLibrary.dll</HintPath>
-        </Reference>
     </ItemGroup>
     <ItemGroup>
       <PackageReference Include="Xamarin.TestCloud.Agent" Version="0.21.9" />
@@ -137,6 +134,13 @@
         <Compile Include="ViewController.designer.cs">
             <DependentUpon>ViewController.cs</DependentUpon>
         </Compile>
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\KeyboardExtension\KeyboardExtension.csproj">
+        <IsAppExtension>true</IsAppExtension>
+        <Project>{48BE1203-0E82-46E9-A011-CC404A8D368F}</Project>
+        <Name>KeyboardExtension</Name>
+      </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
